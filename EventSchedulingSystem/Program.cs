@@ -1,6 +1,7 @@
 using EventSchedulingSystem;
 using EventSchedulingSystem.Application;
 using EventSchedulingSystem.Infrastructure.Data;
+using EventSchedulingSystem.Shared;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -102,6 +103,7 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+    app.ApplyMigrations();
 }
 else
 {
