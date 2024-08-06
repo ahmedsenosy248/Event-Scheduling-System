@@ -74,10 +74,11 @@ Enter your Docker Hub username and password when prompted.
 Tag and Push the Docker Image
 
 Tag the Docker image:
-----docker tag eventschedulingsystem-eventschedulingsystem ahmedsenosy248/eventschedulingsystem-eventschedulingsystem
+----docker tag eventschedulingsystem:dev ahmedsenosy248/eventschedulingsystem:dev
+----docker tag postgres:16 ahmedsenosy248/eventschedulingsystem:dev
 
 Push the Docker image:
-----docker push ahmedsenosy248/eventschedulingsystem-eventschedulingsystem
+----docker push ahmedsenosy248/eventschedulingsystem:dev
 
 
 
@@ -85,7 +86,7 @@ Link to the public GitHub repository:
   ==>  git clone https://github.com/ahmedsenosy248/Event-Scheduling-System.git
 
   Access to the Docker Hub repository containing Docker images 
-  ==>  docker pull ahmedsenosy248/eventschedulingsystem:latest
+  ==>  docker pull ahmedsenosy248/eventschedulingsystem:dev
 
 
 
